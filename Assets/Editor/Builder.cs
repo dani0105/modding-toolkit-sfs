@@ -26,7 +26,7 @@ public class SFS_PartPackModBuilder : OdinEditorWindow
     static string[] AssembliesNames => CompilationPipeline.GetPrecompiledAssemblyNames().Where(x => !x.ToLower().Contains("unity")).Append(String.Empty).OrderBy(x => x).ToArray();
 
     [TitleGroup("Pack Information"), ShowInInspector]
-    public string outputFileName;
+    public string outputFileName = "";
 
     [TitleGroup("Pack Information"), ShowInInspector, InlineEditor(InlineEditorModes.FullEditor, InlineEditorObjectFieldModes.Foldout, DrawHeader = false, Expanded = true, DrawPreview = false), Space]
     public PackData data;
@@ -35,10 +35,13 @@ public class SFS_PartPackModBuilder : OdinEditorWindow
     void NewPackData() => data = CreateInstance<PackData>();
     
     [ShowInInspector, ValueDropdown(nameof(AssetBundles)), TitleGroup("Assets")]
-    public string assetBundleLabel;
+    public string assetBundleLabel = "";
 
     [ShowInInspector, TitleGroup("Build Platforms")]
-    public bool Windows, MacOS;
+    public bool Windows = true, MacOS;
+
+    [ShowInInspector, TitleGroup("DLL path")]
+    public string dllPath="Assets/DLLs/my.dll";
 
     [Button, ShowInInspector]
     void BuildMod()
@@ -71,9 +74,12 @@ public class SFS_PartPackModBuilder : OdinEditorWindow
 
         AssetBundlePack bundlePack = new AssetBundlePack();
 
-        string path = EditorUtility.OpenFilePanel("Custom module (Optional)", Application.dataPath, "dll");
-        if (!path.IsNullOrWhitespace())
-            bundlePack.CodeAssembly = new FilePath(path).ReadBytes();
+        if(dllPath =="" || dllPath == null){
+            dllPath = EditorUtility.OpenFilePanel("Custom module (Optional)", Application.dataPath, "dll");
+        }
+
+        if (!dllPath.IsNullOrWhitespace())
+            bundlePack.CodeAssembly = new FilePath(dllPath).ReadBytes();
 
         // Building AssetBundles
         if (Windows)
