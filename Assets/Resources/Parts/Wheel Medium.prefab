@@ -225,6 +225,9 @@ MonoBehaviour:
   displayName:
     TranslatableName: Rover_Wheel_Name
     plainText: 0
+  pickCategoryName:
+    TranslatableName: None
+    plainText: 0
   description:
     TranslatableName: Rover_Wheel_Description
     plainText: 0
@@ -239,6 +242,7 @@ MonoBehaviour:
     y:
       variables: {fileID: 201175616340340550}
       input: -0.5
+  density: 0.5
   orientation: {fileID: 8119894035004989685}
   variablesModule: {fileID: 201175616340340550}
   variants:

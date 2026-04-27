@@ -190,6 +190,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 9187509144354617492}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!33 &7362409785930956453
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -430,6 +432,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 222413089253414800}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!33 &9199393822953023010
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -539,6 +543,9 @@ MonoBehaviour:
   displayName:
     TranslatableName: Fuel_Tank_Name
     plainText: 0
+  pickCategoryName:
+    TranslatableName: None
+    plainText: 0
   description:
     TranslatableName: Fuel_Tank_Description
     plainText: 0
@@ -553,6 +560,7 @@ MonoBehaviour:
     y:
       variables: {fileID: 6025496177165280511}
       input: height / 2
+  density: 0.5
   orientation: {fileID: 6025496177165280499}
   variablesModule: {fileID: 6025496177165280511}
   variants:
@@ -851,6 +859,7 @@ MonoBehaviour:
     variableName: mass
     referenceToVariables: {fileID: 6025496177165280511}
     localValue: 0
+  setDensity: 1
   parent: {fileID: 0}
   children: []
   flowModules: []
@@ -1041,6 +1050,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 24790120868373141}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!33 &2177878934838489893
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1281,6 +1292,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 8249165978462260013}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!33 &4157675686191912702
 MeshFilter:
   m_ObjectHideFlags: 0

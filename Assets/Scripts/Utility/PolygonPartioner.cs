@@ -84,8 +84,8 @@ public static class PolygonPartioner
 
             if (intPoint != nullvec)
             {
-                // If intPoint is not any of the j line then false, else continue. Intersection has to be interior to qualify as false from here
-                if ((!intPoint.Equals(At(k, vertices))) || (!intPoint.Equals(At(k + 1, vertices))))
+                // Interior intersection (not at an endpoint) means the diagonal is blocked
+                if ((!intPoint.Equals(At(k, vertices))) && (!intPoint.Equals(At(k + 1, vertices))))
                     return false;
             }
         }
@@ -286,6 +286,13 @@ public static class PolygonPartioner
 
                     lowerPoly = Copy(i, (int)bestIndex, vertices);
                     upperPoly = Copy((int)bestIndex, i, vertices);
+                }
+
+                // Guard against degenerate splits that don't reduce polygon size
+                if (lowerPoly.Count >= vertices.Count || upperPoly.Count >= vertices.Count)
+                {
+                    list.Add(vertices);
+                    return list;
                 }
 
                 if (lowerPoly.Count < upperPoly.Count)

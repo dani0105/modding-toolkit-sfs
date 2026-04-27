@@ -1,7 +1,7 @@
 using SFS.World;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using Resources = UnityEngine.Resources;
 
 namespace SFS.Parts.Modules
 {

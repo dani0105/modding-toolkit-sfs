@@ -205,6 +205,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 7678555600985661284}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!23 &5757807763841539509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -310,6 +312,9 @@ MonoBehaviour:
   displayName:
     TranslatableName: Parachute_Name
     plainText: 0
+  pickCategoryName:
+    TranslatableName: None
+    plainText: 0
   description:
     TranslatableName: Parachute_Description
     plainText: 0
@@ -324,6 +329,7 @@ MonoBehaviour:
     y:
       variables: {fileID: 3626758053081018024}
       input: 0.2
+  density: 0.5
   orientation: {fileID: 3288586579123844196}
   variablesModule: {fileID: 3626758053081018024}
   variants:
@@ -452,6 +458,8 @@ MonoBehaviour:
   onDeploy:
     m_PersistentCalls:
       m_Calls: []
+  deploySound_Partial: {fileID: 0}
+  deploySound_Fully: {fileID: 0}
 --- !u!114 &114955729477113294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +487,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 4559947621050034}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -587,6 +596,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 4559947621050034}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -659,6 +669,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 4153571443682118}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -731,6 +742,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 4958748019910402}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -1042,6 +1054,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 4312940821854205242}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!23 &5414126358053220775
 MeshRenderer:
   m_ObjectHideFlags: 0

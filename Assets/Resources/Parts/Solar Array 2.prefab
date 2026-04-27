@@ -104,6 +104,8 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 8905710515723217949}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!114 &3257348986948700469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +226,9 @@ MonoBehaviour:
   displayName:
     TranslatableName: Solar_Panel_Name
     plainText: 0
+  pickCategoryName:
+    TranslatableName: None
+    plainText: 0
   description:
     TranslatableName: Solar_Panel_Description
     plainText: 0
@@ -238,6 +243,7 @@ MonoBehaviour:
     y:
       variables: {fileID: 1449713589513460084}
       input: 0
+  density: 0.5
   orientation: {fileID: 6375236078957571665}
   variablesModule: {fileID: 1449713589513460084}
   variants:
@@ -332,6 +338,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 2480346699566466929}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -404,6 +411,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 7535253667890424400}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -494,6 +502,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 2136229196549872706}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -584,6 +593,7 @@ MonoBehaviour:
     offset: 0
     transform: {fileID: 7535253667890424400}
     spriteRenderer: {fileID: 0}
+    image: {fileID: 0}
     X:
       serializedVersion: 2
       m_Curve:
@@ -900,6 +910,8 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 2471448909710758840}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!114 &8087706692303726375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +1116,8 @@ MonoBehaviour:
   impactTolerance: 1
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 1458582219767562913}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!114 &8904711678941582195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,6 +1299,8 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 3381805903318703083}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!114 &1276992435098254954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,6 +1532,8 @@ MonoBehaviour:
   impactTolerance: 0
   ownEngineNozzle: {fileID: 0}
   polygon: {fileID: 8609976055304554539}
+  collider_Polygon: {fileID: 0}
+  collider_Box: {fileID: 0}
 --- !u!33 &8988332197192168772
 MeshFilter:
   m_ObjectHideFlags: 0
